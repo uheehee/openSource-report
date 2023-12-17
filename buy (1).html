@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flexbox 스타일링 추가 */
+        @font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        #mypage_header {
+            flex: 1; /* 헤더가 화면 전체 높이를 차지하도록 설정 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100vw; /* 최대 폭을 화면 폭과 같게 설정 */
+            padding: 0 10px; /* 좌우 10px의 공백 추가 */
+        }
+
+        #header_wrap {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between; /* 각 엘리먼트를 양 끝에 배치 */
+            line-height: 20px; /* 헤더의 세로 사이즈를 "내 물건 팔기" 텍스트 크기와 같게 설정 */
+        }
+
+        .chat_button {
+            font-size: 18px;
+            color: black;
+            font-family: 'JalnanGothic', sans-serif;
+            background: none;
+            border: #5C5C5C;
+            padding: 8px 12px; /* 버튼 내부의 내용과 버튼의 패딩 조절 */
+            margin: 0;
+        }
+
+        .myleft {
+            font-size: 20px;
+            color: black;
+            font-family: 'JalnanGothic', sans-serif;
+            margin: 0;
+        }
+
+        #mypage_body {
+            margin-top: 10px; /* 윗부분과 바디 사이의 간격 조절 */
+        }
+
+        .myline {
+            font-size: 20px;
+            font-family: 'JalnanGothic', sans-serif;
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .body_content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* 각 내역 아이템 간의 간격 조절 */
+        }
+
+        .body_content img {
+            margin-right: 10px; /* 이미지와 텍스트 사이의 간격 조절 */
+        }
+
+        .sold_out_button {
+            background-color: #FFD699; /* 연한 주황색 배경 */
+            border: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #333; /* 글자 색상 */
+            cursor: not-allowed; /* 마우스 커서를 기본 상태로 설정하여 클릭 방지 */
+        }
+    </style>
+</head>
+<body>
+    <div id="mypage_header">
+        <div id="header_wrap">
+            <div id="header_content">
+                <button type="button" class="chat_button" onclick="location.href='mypage.html';">닫기</button>
+            </div>
+            <div id="header_content">
+                <form>
+                    <span class="myleft">나의 구매 내역</span>
+                </form>
+            </div>
+            <div id="header_content">
+                <button type="button" class="chat_button" onclick="location.href='main.html';">홈으로 가기</button>
+            </div>
+        </div>
+    </div>
+        <div class="body_content">
+            <img src="jelly.jpg" width="200" height="auto">
+            <div>
+                <h4 class="myline left0">한정판 코난 젤리 판매합니다</h4>
+                <h5 class="myline left0">가양동</h5>
+                <h4 class="myline left0">2,000원</h4>
+                <button class="sold_out_button">판매완료</button>
+            </div>
+        </div>
+        
+        <div class="body_content">
+            <img src="ring.jpg" width="200" height="auto">
+            <div>
+                <h4 class="myline left0">너구리 반지 판매합니다 3개일괄</h4>
+                <h5 class="myline left0">상도1동</h5>
+                <h4 class="myline left0">8,000원</h4>
+                <button class="sold_out_button">판매완료</button>
+            </div>
+        </div>
+
+        <div class="body_content">
+            <img src="baby.jpg" width="200" height="auto">
+            <div>
+                <h4 class="myline left0">아기 곰인형 짱귀여움</h4>
+                <h5 class="myline left0">부산광역시 수영구</h5>
+                <h4 class="myline left0">5,000원</h4>
+                <button class="sold_out_button">판매완료</button>
+            </div>
+        </div>
+
+        <div class="body_content">
+            <img src="yum.jpg" width="200" height="auto">
+            <div>
+                <h4 class="myline left0">CU 초코탕후루</h4>
+                <h5 class="myline left0">법동</h5>
+                <h4 class="myline left0">3,000원</h4>
+                <button class="sold_out_button">판매완료</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

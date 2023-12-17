@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flexbox 스타일링 추가 */
+        @font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        #mypage_header {
+            flex: 1; /* 헤더가 화면 전체 높이를 차지하도록 설정 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100vw; /* 최대 폭을 화면 폭과 같게 설정 */
+            padding: 0 10px; /* 좌우 10px의 공백 추가 */
+        }
+
+        #header_wrap {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between; /* 각 엘리먼트를 양 끝에 배치 */
+            line-height: 20px; /* 헤더의 세로 사이즈를 "내 물건 팔기" 텍스트 크기와 같게 설정 */
+        }
+
+        .chat_button {
+            font-size: 18px;
+            color: black;
+            font-family: 'JalnanGothic', sans-serif;
+            background: none;
+            border: #5C5C5C;
+            padding: 8px 12px; /* 버튼 내부의 내용과 버튼의 패딩 조절 */
+            margin: 0;
+        }
+
+        .myleft {
+            font-size: 20px;
+            color: black;
+            font-family: 'JalnanGothic', sans-serif;
+            margin: 0;
+        }
+
+        #mypage_body {
+            margin-top: 10px; /* 윗부분과 바디 사이의 간격 조절 */
+        }
+    </style>
+</head>
+<body>
+    <div id="mypage_header">
+        <div id="header_wrap">
+            <div id="header_content">
+                <button type="button" class="chat_button" onclick="location.href='main.html';">닫기</button>
+            </div>
+            <div id="header_content">
+                <form>
+                    <span class="myleft">내 물건 팔기</span>
+                </form>
+            </div>
+            <div id="header_content">
+                <button type="button" class="chat_button" onclick="location.href='main.html';">작성 완료</button>
+            </div>
+        </div>
+    </div>
+    <div id="mypage_body">
+        <div id="body_content1">
+            <div id="body_wrap">
+                <br><br><h4 class="myline left0">사진 업로드</h4>
+                <input type="file" class="name_change right_button" accept="image/*" id="fileInput" />
+
+            </div>
+        </div>
+        
+        <div id="body_content2">
+            <div id="body_wrap">
+                <br><br><h4 class="myline left0">제목</h4>
+                <input type="text" class="input_text" placeholder="제목을 입력하세요">
+                <br><br><h4 class="myline left0">카테고리 선택</h4>
+                <select class="input_text">
+                    <option value="디지털기기">디지털기기</option>
+                    <option value="생활가전">생활가전</option>
+                    <option value="가구/인테리어">가구/인테리어</option>
+                    <option value="생활/주방">생활/주방</option>
+                    <option value="유아동">유아동</option>
+                    <option value="유아도서">유아도서</option>
+                    <option value="여성의류">여성의류</option>
+                    <option value="여성잡화">여성잡화</option>
+                    <option value="남성패션/잡화">남성패션/잡화</option>
+                    <option value="뷰티/미용">뷰티/미용</option>
+                    <option value="스포츠/레저">스포츠/레저</option>
+                    <option value="취미/게임/음반">취미/게임/음반</option>
+                    <option value="도서">도서</option>
+                    <option value="티켓/교환권">티켓/교환권</option>
+                    <option value="가공식품">가전가공식품제품</option>
+                    <option value="반려동물용품">반려동물용품</option>
+                    <option value="식물">식물</option>
+                    <option value="기타 중고용품">기타 중고용품</option>
+                    <option value="삽니다">삽니다</option>
+                </select>
+                <br><br><h4 class="myline left0">자세한 설명</h4>
+                <input type="text" class="input_text" placeholder="설명을 입력하세요">
+                <br><br><h4 class="myline left0">거래 희망 장소</h4>
+                <input type="text" class="input_text" placeholder="장소를 입력하세요">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

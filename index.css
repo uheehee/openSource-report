@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#header{
+    height: 6.4rem;
+}
+#header_wrap {
+    display: flex;
+    align-items: center; /* 수직 정렬: 센터 */
+    justify-content: space-between; /* 요소 사이의 간격을 최대로 확보하여 좌우 정렬 */
+}
+
+/* header_content 스타일 */
+#header_content {
+    margin-right: 20px; /* 각 헤더 아이템 사이의 간격을 조절할 수 있습니다. */
+}
+
+/* search_input, chat_button을 세로로 정렬하기 위한 스타일 */
+form {
+    display: flex;
+    align-items: center; /* 수직 정렬: 센터 */
+}
+
+#header_wrap{
+    height:100%
+}
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.header_logo{
+    position: relative;
+    left:30px;
+}
+.header_menu{
+    font-size:20px;
+    color:#5C5C5C;
+    font-family: 'JalnanGothic', sans-serif;
+    background:none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.chat_button{
+    font-size:18px;
+    color:black;
+    font-family: 'JalnanGothic', sans-serif;
+    background:none;
+    border: #5C5C5C;
+    cursor: pointer;
+}
+#body_content1 {
+    height:48rem;
+    background-image: url('back1.png'); /* 첫 번째 섹션 배경 이미지 */
+    background-size: cover; /* 배경 이미지를 커버로 설정 */
+}
+#body_content2 {
+    height:48rem;
+    background-image: url('back2.png'); /* 두 번째 섹션 배경 이미지 */
+    background-size: cover; /* 배경 이미지를 커버로 설정 */
+}
+#body_content3 {
+    height:48rem;
+    background-image: url('back3.png'); /* 세 번째 섹션 배경 이미지 */
+    background-size: cover; /* 배경 이미지를 커버로 설정 */
+}
+#body_content4 {
+    height:48rem;
+    background-image: url('back4.png'); /* 네 번째 섹션 배경 이미지 */
+    background-size: cover; /* 배경 이미지를 커버로 설정 */
+}
+#body_content5 {
+    height:48rem;
+    background-image: url('back5.png'); /* 다섯 번째 섹션 배경 이미지 */
+    background-size: cover; /* 배경 이미지를 커버로 설정 */
+}
+.A{
+    font-size:45px;
+    font-family: 'JalnanGothic',sans-serif;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 4rem;
+}
+.B{
+    font-size:20px;
+    font-family: 'JalnanGothic',sans-serif;
+    color:#5C5C5C;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 2rem;
+}
+.C{
+    font-size:18px;
+    font-family: 'JalnanGothic',sans-serif;
+    color:#F25D07;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 2rem;
+}
+.D{
+    font-size:15px;
+    font-family: 'JalnanGothic',sans-serif;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 0.5rem;
+}
+.E{
+    font-size:12px;
+    font-family: 'JalnanGothic',sans-serif;
+    background:none;
+    border:none;
+    color:#5C5C5C;
+    padding:0;
+    line-height: 1.2rem;
+}
+.body_menu{
+    font-size:23px;
+    color:black;
+    font-family: 'JalnanGothic', sans-serif;
+    background:#cdcdcd;
+    border: #cdcdcd;
+    border-radius: 5px;
+    padding:20px,30px;
+    cursor: pointer;
+}
+.left{
+    position: relative;
+    top:15rem;
+    left:18rem;
+}
+.left2{
+    position: relative;
+    top:18rem;
+    left:18rem;
+}
+.right{
+    position: relative;
+    top:15rem;
+    left:65rem;
+}
+.right2{
+    position: relative;
+    top:18rem;
+    left:65rem;
+}
+.right3{
+    position: relative;
+    top:14rem;
+    left:65rem;
+}
+.right_button{
+    position:relative;
+    top:21rem;
+    left:65rem;
+}
+.left3{
+    position: relative;
+    top:12rem;
+    left:18rem;
+}
+.left4{
+    position: relative;
+    top:18.5rem;
+    left:18.5rem;
+}
+.left5{
+    position: relative;
+    top:19.5rem;
+    left:18.5rem;
+}
+.left4_2{
+    position: relative;
+    top:15.7rem;
+    left:27rem;
+}
+.left5_2{
+    position: relative;
+    top:16.7rem;
+    left:27rem;
+}
+.left4_3{
+    position: relative;
+    top:12.8rem;
+    left:35.5rem;
+}
+.left5_3{
+    position: relative;
+    top:13.8rem;
+    left:35.5rem;
+}
+.left_3{
+    position: relative;
+    top:12rem;
+    left:18rem;
+}
+.left2_3{
+    position: relative;
+    top:12rem;
+    left:18rem;
+}
+.left3_3{
+    position:relative;
+    top:11rem;
+    left:18rem;
+}
+.imglogo{
+    left:10rem;
+}

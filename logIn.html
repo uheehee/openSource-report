@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>로그인</title>
+</head>
+<body>
+    <div id="header_content-1">
+        <a href="main.html"><img src="carrot word.png" class='header_logo' width="80" height="auto"></a>
+        </div>
+    <h2>로그인</h2>
+    <form id="loginForm">
+        <div id="name">
+            <label for="loginUsername">아이디 &nbsp&nbsp: &nbsp</label>
+            <input type="text" id="loginUsername" name="loginUsername" required><br>
+        </div>
+        <div id="password">
+            <label for="loginPassword">비밀번호 :</label>
+            <input type="password" id="loginPassword" name="loginPassword" required><br>
+        </div>
+        <button type="button" class='loginButton' onclick="login()">로그인</button>
+
+        <!-- 공통 스크립트 파일 포함 -->
+        <script src="common.js"></script>
+    </form>
+
+    <script>
+        function login() {
+            var loginUsername = document.getElementById('loginUsername').value.trim();
+            var loginPassword = document.getElementById('loginPassword').value.trim();
+
+            // 로컬 스토리지에서 회원 정보 가져오기
+            var storedUser = JSON.parse(localStorage.getItem('user'));
+
+            // 배열에서 사용자 정보 찾기
+            if (storedUser && storedUser.username === loginUsername && storedUser.password === loginPassword) {
+                // 로그인 성공 알림
+                alert(loginUsername + '님, 로그인이 성공적으로 완료되었습니다.');
+            } else {
+                // 로그인 실패 알림
+                alert('로그인 실패: 아이디 또는 비밀번호가 일치하지 않습니다.');
+            }
+        }
+    </script>
+</body>
+</html>

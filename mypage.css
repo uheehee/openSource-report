@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*여기까진 기본*/
+#mypage_header{
+    height: 6.4rem;
+}
+#header_wrap {
+    display: flex;
+    align-items: center; /* 수직 정렬: 센터 */
+    justify-content: space-between; /* 요소 사이의 간격을 최대로 확보하여 좌우 정렬 */
+}
+
+/* header_content 스타일 */
+#header_content {
+    margin-right: 20px; /* 각 헤더 아이템 사이의 간격을 조절할 수 있습니다. */
+}
+
+/* search_input, chat_button을 세로로 정렬하기 위한 스타일 */
+form {
+    display: flex;
+    align-items: center; /* 수직 정렬: 센터 */
+}
+
+#header_wrap{
+    height:100%
+}
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.header_menu{
+    font-size:20px;
+    color:black;
+    font-family: 'JalnanGothic', sans-serif;
+    background:none;
+    border: none;
+    padding: 0;
+}
+.chat_button{
+    font-size:18px;
+    color:black;
+    font-family: 'JalnanGothic', sans-serif;
+    background:none;
+    border: #5C5C5C;
+}
+#body_content1 {
+    height:48rem;
+}
+#body_content2 {
+    height:48rem;
+}
+.myline{
+    font-size:45px;
+    font-family: 'JalnanGothic',sans-serif;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 4rem;
+}
+.name{
+    font-size:20px;
+    font-family: 'JalnanGothic',sans-serif;
+    color:#5C5C5C;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 2rem;
+}
+.name_change{
+    font-size:20px;
+    font-family: 'JalnanGothic',sans-serif;
+    color:#5C5C5C;
+    background:none;
+    border:none;
+    padding:0;
+    line-height: 2rem;
+}
+.chat_button{
+    font-size:18px;
+    color:black;
+    font-family: 'JalnanGothic', sans-serif;
+    background:none;
+    border: #5C5C5C;
+}
+.left{
+    position: relative;
+    top:15rem;
+    left:18rem;
+}
+.myleft{
+    position: relative;
+    top:15rem;
+    left:18rem;
+}
+.left_button{
+    position: relative;
+    top:15rem;
+    left:18rem;
+}
+.right_button{
+    position: relative;
+    top:15rem;
+    left:65rem;
+}
+.imglogo{
+    left:10rem;
+}
